@@ -1,13 +1,14 @@
 #!/bin/bash
 
-sudo pacman -Syu git zsh zed wget curl nmap rust fastfetch hyfetch traceroute tree aircrack-ng \
+sudo pacman -Syu git zsh zed wget curl nmap rustup fastfetch hyfetch traceroute tree aircrack-ng \
  signal-desktop sshs sshpass ssh-tools ssh-key-confirmer corkscrew rkhunter kleopatra musl dracut brightnessctl \
  sway wofi waybar dconf dconf-editor nemo network-manager-applet ly base-devel bottom bubblewrap binsider \
  bmon sysdig usbguard yt-dlp gping macchanger mitmproxy android-file-transfer android-tools veracrypt \
  hyprshot shadowsocks-rust blueman bluetui gpg-tui distrobox sn0int onlyoffice-bin libreoffice-still-en-gb \
- qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools
+ qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools steam podman cargo-audit hydra zip rarcrack \
+ fcrackzip tomb
 
-
+rustup default stable
 
 git clone https://aur.archlinux.org/paru.git
 cd paru
