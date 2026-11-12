@@ -5,7 +5,7 @@ sudo pacman -Syu git zsh zed wget curl nmap rust fastfetch hyfetch traceroute tr
  sway wofi waybar dconf dconf-editor nemo network-manager-applet ly base-devel bottom bubblewrap binsider \
  bmon sysdig usbguard yt-dlp gping macchanger mitmproxy android-file-transfer android-tools veracrypt \
  hyprshot shadowsocks-rust blueman bluetui gpg-tui distrobox sn0int onlyoffice-bin libreoffice-still-en-gb \
- qemu-full oha impala termusic wiremix
+ qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd
 
 
 
