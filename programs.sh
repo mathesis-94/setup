@@ -7,7 +7,7 @@ sudo pacman -Syu git zsh zed wget curl nmap rustup fastfetch hyfetch traceroute 
  hyprshot shadowsocks-rust blueman bluetui gpg-tui distrobox sn0int onlyoffice-bin libreoffice-still-en-gb \
  qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools steam podman cargo-audit hydra zip rarcrack \
  fcrackzip tomb prismlauncher python openjdk21-src openjdk21-doc r libpwquality lynis clamav linux-hardened-headers \
- kernel-hardening-checker nftables fail2ban
+ kernel-hardening-checker nftables fail2ban hyprpaper
 
 rustup default stable
 
@@ -57,5 +57,7 @@ sudo freshclam
 
 sudo systemctl enable nftables.service
 sudo systemctl start nftables.service
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
 
 
