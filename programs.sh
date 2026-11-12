@@ -59,5 +59,8 @@ sudo systemctl enable nftables.service
 sudo systemctl start nftables.service
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
+chmod 755 $HOME
+mkdir $HOME/.ssh
+sudo chmod 700 $HOME/.ssh
 
 
