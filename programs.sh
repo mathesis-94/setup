@@ -6,7 +6,8 @@ sudo pacman -Syu git zsh zed wget curl nmap rustup fastfetch hyfetch traceroute 
  bmon sysdig usbguard yt-dlp gping macchanger mitmproxy android-file-transfer android-tools veracrypt \
  hyprshot shadowsocks-rust blueman bluetui gpg-tui distrobox sn0int onlyoffice-bin libreoffice-still-en-gb \
  qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools steam podman cargo-audit hydra zip rarcrack \
- fcrackzip tomb prismlauncher python openjdk21-src openjdk21-doc r libpwquality lynis
+ fcrackzip tomb prismlauncher python openjdk21-src openjdk21-doc r libpwquality lynis clamav linux-hardened-headers \
+ kernel-hardening-checker 
 
 rustup default stable
 
@@ -16,7 +17,7 @@ makepkg -si
 cd ..
 
 paru -Syu eww waterfox-bin hyprlang2lua framework-tool-tui gloomberb-bin wtfutil nym-vpnd wluma cliamp arti linecast nemu systemd-manager-tui \
-tray-tui radarr-bin tortuise xytz pipemixer
+tray-tui radarr-bin tortuise xytz pipemixer caffeine-ng
 
 sudo systemctl enable nym-vpnd
 sudo systemctl enable ly@tty2.service
@@ -40,3 +41,17 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg
 # /etc/pacman.conf
 # [chaotic-aur]
 # Include = /etc/pacman.d/chaotic-mirrorlist
+
+
+sudo rkhunter --propupd
+# Get rid of false positives by adding the following to /etc/rkhunter.conf:
+# SCRIPTWHITELIST=/usr/bin/egrep
+# SCRIPTWHITELIST=/usr/bin/fgrep
+# SCRIPTWHITELIST=/usr/bin/ldd
+# SCRIPTWHITELIST=/usr/bin/vendor_perl/GET
+sudo rkhunter --update
+sudo rkhunter --check --sk
+sudo rkhunter --config-check
+sudo freshclam
+
+
