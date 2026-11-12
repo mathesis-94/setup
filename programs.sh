@@ -17,7 +17,7 @@ makepkg -si
 cd ..
 
 paru -Syu eww waterfox-bin hyprlang2lua framework-tool-tui gloomberb-bin wtfutil nym-vpnd wluma cliamp arti linecast nemu systemd-manager-tui \
-tray-tui radarr-bin tortuise xytz pipemixer caffeine-ng
+tray-tui radarr-bin tortuise xytz pipemixer caffeine-ng sonarr
 
 sudo systemctl enable nym-vpnd
 sudo systemctl enable ly@tty2.service
@@ -25,6 +25,7 @@ sudo systemctl disable sddm
 sudo systemctl disable getty@tty2.service
 sudo systemctl daemon-reload
 sudo systemctl enable --now radarr
+sudo systemctl enable --now sonarr
 
 paru -S nym-vpnc-bin
 
