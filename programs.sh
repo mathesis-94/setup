@@ -5,7 +5,7 @@ sudo pacman -Syu git zsh zed wget curl nmap rust fastfetch hyfetch traceroute tr
  sway wofi waybar dconf dconf-editor nemo network-manager-applet ly base-devel bottom bubblewrap binsider \
  bmon sysdig usbguard yt-dlp gping macchanger mitmproxy android-file-transfer android-tools veracrypt \
  hyprshot shadowsocks-rust blueman bluetui gpg-tui distrobox sn0int onlyoffice-bin libreoffice-still-en-gb \
- qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd
+ qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools
 
 
 
@@ -15,7 +15,7 @@ makepkg -si
 cd ..
 
 paru -Syu eww waterfox-bin hyprlang2lua framework-tool-tui gloomberb-bin wtfutil nym-vpnd wluma cliamp arti linecast nemu systemd-manager-tui \
-tray-tui radarr-bin tortuise xytz
+tray-tui radarr-bin tortuise xytz pipemixer
 
 sudo systemctl enable nym-vpnd
 sudo systemctl enable ly@tty2.service
