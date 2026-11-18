@@ -5,10 +5,11 @@ sudo pacman -Syu git zsh zed wget curl nmap rustup fastfetch hyfetch traceroute 
  sway wofi waybar dconf dconf-editor nemo network-manager-applet ly base-devel bottom bubblewrap binsider \
  bmon sysdig usbguard yt-dlp gping macchanger mitmproxy android-file-transfer android-tools veracrypt \
  hyprshot shadowsocks-rust blueman bluetui gpg-tui distrobox sn0int onlyoffice-bin libreoffice-still-en-gb \
- qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools steam podman cargo-audit hydra zip rarcrack \
+ oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools steam podman cargo-audit hydra zip rarcrack \
  fcrackzip tomb prismlauncher python openjdk21-src openjdk21-doc r libpwquality lynis clamav linux-hardened-headers \
- kernel-hardening-checker nftables fail2ban hyprpaper itch-setup-bin aqemu-qt6-git gcc-gcobol gcc gcc-rust metasploit \
- nasm binutils man-db podman podman-compose python-pipx yara podman-docker use-overlayfs
+ kernel-hardening-checker nftables fail2ban hyprpaper itch-setup-bin gcc-gcobol gcc gcc-rust metasploit \
+ nasm binutils man-db podman podman-compose python-pipx yara podman-docker use-overlayfs qemu-system-x86 qemu-desktop \
+ qemu-img qemu-tools libvirt virt-manager virt-viewer spice-gtk passt edk2-ovmf swtpm xz
 
 
 rustup default stable
