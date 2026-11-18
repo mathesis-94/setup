@@ -8,7 +8,7 @@ sudo pacman -Syu git zsh zed wget curl nmap rustup fastfetch hyfetch traceroute 
  qemu-full oha impala termusic wiremix ttf-bigblueterminal-nerd alsa-tools steam podman cargo-audit hydra zip rarcrack \
  fcrackzip tomb prismlauncher python openjdk21-src openjdk21-doc r libpwquality lynis clamav linux-hardened-headers \
  kernel-hardening-checker nftables fail2ban hyprpaper itch-setup-bin aqemu-qt6-git gcc-gcobol gcc gcc-rust metasploit \
- nasm binutils man-db
+ nasm binutils man-db podman podman-compose python-pipx yara podman-docker 
 
 rustup default stable
 
