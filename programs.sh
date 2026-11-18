@@ -12,6 +12,12 @@ sudo pacman -Syu git zsh zed wget curl nmap rustup fastfetch hyfetch traceroute 
 
 rustup default stable
 
+
+mkdir -p ~/.config/containers
+cat > ~/.config/containers/storage.conf <<'EOF'
+[storage]
+driver = "btrfs"
+EOF
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
