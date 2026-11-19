@@ -14,7 +14,7 @@ sudo pacman -Syu git zsh zed wget curl nmap rustup fastfetch hyfetch traceroute 
 
 rustup default stable
 
-
+mkdir -p ~/.config/libvirt/
 mkdir -p ~/.config/containers
 cat > ~/.config/containers/storage.conf <<'EOF'
 [storage]
