@@ -40,6 +40,7 @@ sudo systemctl disable getty@tty2.service
 sudo systemctl daemon-reload
 sudo systemctl enable --now radarr
 sudo systemctl enable --now sonarr
+sudo systemctl enable libvirtd
 
 paru -S nym-vpnc-bin
 
